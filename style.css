@@ -1,0 +1,119 @@
+body {
+    margin: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+footer,
+nav,
+main {
+    border-radius: 15px;
+    margin: 10px;
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    border: skyblue 1px solid;
+}
+
+.container
+{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+    'header header header'
+    'nav main main'
+    '. main main'
+    'footer footer footer'
+    ;
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+
+
+.banner
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.header-text
+{
+
+}
+
+#live-btn
+{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navbar
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.navbar > a
+{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.navbar>a:hover
+{
+    background-color: tomato;
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.post
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#btn
+{
+    margin-top: 10px;
+}
+
+.footer
+{
+    
+}
+
+
+<div class="post">
+                <img src="img/blog.png" alt="post">
+                <button id="btn">Transfer</button>
+                <h4>Let's see whats coming next...</h4>
+                <i class="fa-regular fa-clock">12H</i>
+                <i class="fa-regular fa-message">33</i>
+            </div>
