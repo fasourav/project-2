@@ -17,61 +17,51 @@ main {
     border: skyblue 1px solid;
 }
 
-.container
-{
+.container {
     display: grid;
-    height: 100vh;
+    /* height: 100vh; */
     grid-template-areas:
-    'header header header'
-    'nav main main'
-    '. main main'
-    'footer footer footer'
-    ;
+        'header header header'
+        'nav main main'
+        '. main main'
+        'footer footer footer';
 }
 
-header{
+header {
     grid-area: header;
 }
 
-footer{
+footer {
     grid-area: footer;
 }
-nav{
+nav {
     grid-area: nav;
 }
-main{
+main {
     grid-area: main;
 }
 
-
-.banner
-{
+.banner {
     display: flex;
     flex-direction: row;
 }
 
-
-.header-text
-{
-
+.header-text {
 }
 
-#live-btn
-{
+#live-btn {
     text-decoration: none;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
 }
 
-.navbar
-{
+.navbar {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.navbar > a
-{
+.navbar > a {
     padding: 10px;
     text-decoration: none;
     color: white;
@@ -80,40 +70,49 @@ main{
     margin: 10px;
 }
 
-.navbar>a:hover
-{
+.navbar > a:hover {
     background-color: tomato;
 }
 
-main
-{
+main {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
-.post
-{
+.post {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
 }
 
-#btn
-{
+#btn {
     margin-top: 10px;
 }
 
-.footer
-{
-    
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 40px;
+}
+.f-header {
+    text-align: center;
+}
+.links > a {
+    text-decoration: none;
+    color: white;
+}
 
-<div class="post">
-                <img src="img/blog.png" alt="post">
-                <button id="btn">Transfer</button>
-                <h4>Let's see whats coming next...</h4>
-                <i class="fa-regular fa-clock">12H</i>
-                <i class="fa-regular fa-message">33</i>
-            </div>
+.footer > hr {
+    width: 60%;
+    color: gray;
+}
