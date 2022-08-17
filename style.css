@@ -1,20 +1,30 @@
 body {
-    margin: 50px;
+    margin: 10px;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
-header,
-footer,
-nav,
-main {
-    border-radius: 15px;
-    margin: 10px;
-    background-color: steelblue;
-    color: white;
+
+header
+{
     padding: 20px;
-    border: skyblue 1px solid;
+    margin: 10px;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+nav
+{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+main
+{
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .container {
@@ -44,28 +54,41 @@ main {
 .banner {
     display: flex;
     flex-direction: row;
+    background-color: black;
+    color: white;
 }
 
-.header-text {
-}
 
 #live-btn {
     text-decoration: none;
-    background-color: white;
+    background-color: red;
     padding: 10px;
     border-radius: 10px;
+    color: white;
+}
+
+#live-btn:hover
+{
+    color:black;
+    background-color: white;
+}
+
+#live-btn > a
+{
+    margin-top: 10px;
 }
 
 .navbar {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: black;
 }
 .navbar > a {
     padding: 10px;
     text-decoration: none;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     border-radius: 20px;
     margin: 10px;
 }
@@ -78,12 +101,14 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    background-color: white;
 }
 
 .post {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 15px;
+    color: black;
 }
 
 #btn {
@@ -91,14 +116,16 @@ main {
 }
 
 .footer {
+    background-color: black;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
     align-items: center;
+    color: white;
 }
 
 .links {
+    padding: 30px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -106,8 +133,10 @@ main {
 }
 .f-header {
     text-align: center;
+    padding: 20px;
 }
 .links > a {
+    padding: 10px;
     text-decoration: none;
     color: white;
 }
@@ -115,4 +144,23 @@ main {
 .footer > hr {
     width: 60%;
     color: gray;
+}
+
+.header-text
+{
+    flex-wrap: wrap;   
+}
+
+.country
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.card
+{
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 15px;
 }
